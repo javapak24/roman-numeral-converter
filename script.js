@@ -2,7 +2,7 @@ const numInput = document.getElementById('number');
 const convertBtn = document.getElementById('convert-btn');
 const resultField = document.getElementById('output');
 convertBtn.addEventListener('click', convertInput);
-console.log('we are working');
+
 function convertInput() {
   const input = parseInt(numInput.value);
   console.log(input);
