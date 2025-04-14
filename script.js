@@ -11,7 +11,7 @@ function convertInput() {
   } else if (input <= 0) {
     resultField.innerText = 'Please enter a number greater than or equal to 1';
   } else if (input >= 4000) {
-    resultField.innerText = 'Please enter a number less than 4000';
+    resultField.innerText = 'Please enter a number less than or equal to 3999';
   } else {
     abcd(input);
   }
@@ -44,51 +44,3 @@ function abcd(number, result = '') {
     }
   }
 }
-// num input converted to a string after parse int removes leading zeros
-// .split turns string to an array, and .map(Number) converts it to a number array in this instance
-// function abc() {
-//   const numString = String(parseInt(numInput.value));
-//   const inputArray = cleanString(numString.split('')).map(Number);
-//   console.log(numString);
-//   console.log(numInput.value);
-//   console.log(inputArray);
-// }
-
-// function cleanString(string) {
-//   const regex = /[^a-zA-Z0-9]/g;
-//   return string.replace(regex, '');
-// }
-
-// const numToRom = (input) => {
-//   // base case
-//   if (input === 0) {
-//     resultField.innerText = '0';
-//     return;
-//   }
-
-//   if (a) {
-//   }
-// };
-
-//array.shift removes first element in array
-
-// function logic(array) {
-//   let digitplace = 4;
-//   if (array.length === digitplace && array[0] === 0) {
-//     array.shift();
-//     digitplace -= 1;
-//   } else {
-//     while (array.length === 4 && 0 < array[0] < 4) {
-//       resultField.innerText += 'M';
-//       array[0] = array[0] - 1;
-//     }
-//   }
-// }
-//make function or add code to function to check length of string array and then create logic from there,
-// also have it either remove the last element or first element of the array and then call itself
-
-// if (array.length === 4 && array[0] === 4) {
-//   resultField.innerText += 'CM';
-//   array.shift();
-// } else {
-// }
